@@ -3,9 +3,148 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Daily News</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #283593;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 20px auto;
+        }
+
+        /* Featured Article */
+        .featured-article {
+            background-color: #ffeb3b;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .featured-article h2 {
+            color: #d32f2f;
+        }
+
+        .featured-article p {
+            line-height: 1.6;
+        }
+
+        /* News Section */
+        .news-section {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .news-article {
+            background-color: #fff;
+            flex: 1 1 300px;
+            margin: 10px;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .news-article:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .news-article h2 {
+            color: #1e88e5;
+            margin-bottom: 10px;
+        }
+
+        .news-article p {
+            line-height: 1.6;
+        }
+
+        .read-more {
+            color: #1e88e5;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .read-more:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #283593;
+            color: #fff;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
-    <h1>hello</h1>
+
+<header>
+    <h1>Daily News</h1>
+</header>
+
+<div class="container">
+    <!-- Featured Article -->
+    <section class="featured-article">
+        <h2>Top Story: Major Event Shocks the World</h2>
+        <p>Get the latest insights on a significant global event that has captured everyone’s attention. Stay updated as we dive deep into the unfolding story with expert analysis and on-the-ground reporting.</p>
+        <a href="#" class="read-more">Read More &raquo;</a>
+    </section>
+
+    <!-- Other News Articles -->
+    <section class="news-section">
+        <div class="news-article">
+            <h2>Breaking News 1</h2>
+            <p>This is the summary of the first news article. It provides a quick overview of the topic covered in this article.</p>
+            <a href="#" class="read-more">Read More &raquo;</a>
+        </div>
+        
+        <div class="news-article">
+            <h2>Breaking News 2</h2>
+            <p>This is the summary of the second news article. It provides a brief insight into the contents of the article.</p>
+            <a href="#" class="read-more">Read More &raquo;</a>
+        </div>
+        
+        <div class="news-article">
+            <h2>Breaking News 3</h2>
+            <p>This is the summary of the third news article. This section covers the highlights of the story.</p>
+            <a href="#" class="read-more">Read More &raquo;</a>
+        </div>
+
+        <div class="news-article">
+            <h2>Breaking News 4</h2>
+            <p>Here’s another intriguing news story that dives into current events and keeps readers informed.</p>
+            <a href="#" class="read-more">Read More &raquo;</a>
+        </div>
+    </section>
+</div>
+
+<footer>
+    <p>&copy; 2024 Daily News. All Rights Reserved.</p>
+</footer>
+
 </body>
 </html>
